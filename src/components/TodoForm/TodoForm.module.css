@@ -1,0 +1,15 @@
+.TodoForm {
+    padding: 50px;
+    height: 15px;
+    width: 100px;
+    border-radius: 10%;
+    background-color: blueviolet;
+    margin: 50px auto auto auto;
+}
+
+.SubmitButton {
+    background-color: aqua;
+    color: black;
+    border-radius: 100%;
+    border: 2px solid black;
+}
