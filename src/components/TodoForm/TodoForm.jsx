@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './TodoForm.module.css'
-import { prependOnceListener } from 'cluster';
 
-function TodoForm () {
+function TodoForm (props) {
     return (
         <form className={styles.TodoForm}>
-            <input onChange={props.handleChange}/>
+            <input
+            value={props.text}
+            onChange={props.handleChange}/>
             <button 
             className={styles.SubmitButton}>
             Add Todo

@@ -10,10 +10,11 @@ class App extends Component {
       text: "What's up Austin",
       todos: []
     }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(evt){
-    console.log(evt)
+    this.setState({ text: evt.currentTarget.value })
   }
 
   render() {
@@ -24,7 +25,7 @@ class App extends Component {
         </header>
         <NavBar />
         <TodoForm
-        textValue={}
+        text={this.state.text}
         handleChange={this.handleChange}
         />
       </div>
